@@ -47,7 +47,7 @@ app.get("/users", async (req, res) => {
 // Endpoint para obtener todos los alumnos
 app.get("/students", async (req, res) => {
   try {
-    const queryResult = await getQueryResult("SELECT * FROM Alumnos");
+    const queryResult = await getQueryResult("SELECT * FROM Alumno");
     res.send(queryResult);
   } catch (err) {
     res.status(500).send("Error al obtener los alumnos");
